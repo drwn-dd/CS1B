@@ -6,6 +6,58 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.burger-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.burger {
+    width: 30px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    background: #00ff00;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* animation into X */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* menu box */
+.menu {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #1f3b1f;
+    border: 2px solid #00ff00;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+/* smaller buttons only inside menu */
+.menu button {
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+}
 .menu {
     position: absolute;
     top: 60px;
