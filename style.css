@@ -5,9 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* BURGER RIGHT SIDE */
+/* =========================
+   BURGER (RIGHT SIDE)
+========================= */
+
 .burger-wrapper {
     position: fixed;
     top: 20px;
@@ -40,7 +45,10 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* MENU RIGHT SIDE */
+/* =========================
+   MENU
+========================= */
+
 .menu {
     position: fixed;
     top: 60px;
@@ -61,10 +69,14 @@ body {
     margin: 5px 0;
 }
 
-/* CONTAINER */
+/* =========================
+   CONTAINER (DESKTOP DEFAULT)
+========================= */
+
 .container {
     background-color: #1f3b1f;
     width: 600px;
+    max-width: 90%;
     padding: 20px;
     border: 2px solid #00ff00;
     margin-top: 40px;
@@ -72,7 +84,10 @@ body {
     border-radius: 20px;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
+
 button {
     background-color: black;
     color: #00ff00;
@@ -88,14 +103,20 @@ button:hover {
     color: black;
 }
 
-/* GRID */
+/* =========================
+   GRID (DESKTOP)
+========================= */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-/* BOX */
+/* =========================
+   BOX
+========================= */
+
 .box {
     border: 2px solid #00ff00;
     padding: 5px;
@@ -107,6 +128,51 @@ button:hover {
     border-radius: 20px;
 }
 
+/* =========================
+   HIDDEN
+========================= */
+
 .hidden {
     display: none;
+}
+
+/* =========================
+   📱 MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .menu {
+        width: 140px;
+        right: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+/* small phones */
+@media (max-width: 480px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+        padding: 12px;
+    }
 }
