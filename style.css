@@ -6,7 +6,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #1f3b1f;
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
 
+.menu button {
+    margin: 5px 0;
+    width: 120px;
+}
 .nav {
     margin-top: 20px;
 }
