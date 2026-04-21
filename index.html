@@ -108,11 +108,19 @@ function goHome() {
 
 <div style="position: absolute; top: 20px; left: 20px;">
 <button onclick="toggleMenu()">☰</button>
-<div id="menu" class="menu hidden">
-  <button onclick="showSection('activity'); toggleMenu()">Activity</button>
-  <button onclick="showSection('quiz'); toggleMenu()">Quiz</button>
-  <button onclick="showSection('exam'); toggleMenu()">Exam</button>
-  <button onclick="goHome(); toggleMenu()">Home</button>
+<div class="burger-wrapper">
+    <div class="burger" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="menu" class="menu hidden">
+        <button onclick="showSection('activity'); toggleMenu(document.querySelector('.burger'))">Activity</button>
+        <button onclick="showSection('quiz'); toggleMenu(document.querySelector('.burger'))">Quiz</button>
+        <button onclick="showSection('exam'); toggleMenu(document.querySelector('.burger'))">Exam</button>
+        <button onclick="goHome(); toggleMenu(document.querySelector('.burger'))">Home</button>
+    </div>
 </div>
 </div>
 
