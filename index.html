@@ -64,10 +64,6 @@ button:hover {
 </style>
 
 <script>
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("hidden");
-}
 function showSection(sectionId) {
     document.getElementById("home").style.display = "none";
     document.getElementById("activity").style.display = "none";
@@ -82,6 +78,11 @@ function goHome() {
     document.getElementById("activity").style.display = "none";
     document.getElementById("quiz").style.display = "none";
     document.getElementById("exam").style.display = "none";
+}
+
+function toggleMenu(el) {
+    el.classList.toggle("active");
+    document.getElementById("menu").classList.toggle("hidden");
 }
 </script>
 
