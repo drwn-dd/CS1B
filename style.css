@@ -7,19 +7,16 @@ body {
     align-items: center;
 }
 
-/* =========================
-   BURGER MENU
-========================= */
-
+/* BURGER */
 .burger-wrapper {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .burger {
-    width: 30px;
+    width: 35px;
     cursor: pointer;
 }
 
@@ -31,7 +28,7 @@ body {
     transition: 0.3s;
 }
 
-/* ANIMATION: ☰ → ✖ */
+/* animation */
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -44,7 +41,7 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* MENU BOX */
+/* MENU */
 .menu {
     position: fixed;
     top: 60px;
@@ -55,22 +52,17 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 110px;
+    width: 120px;
     z-index: 999;
 }
 
-/* MENU BUTTONS */
 .menu button {
     font-size: 12px;
     padding: 5px;
     margin: 5px 0;
-    width: 100%;
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
-
+/* CONTAINERS */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -81,10 +73,7 @@ body {
     border-radius: 20px;
 }
 
-/* =========================
-   BUTTONS (GENERAL)
-========================= */
-
+/* BUTTONS */
 button {
     background-color: black;
     color: #00ff00;
@@ -100,40 +89,24 @@ button:hover {
     color: black;
 }
 
-/* =========================
-   GRID
-========================= */
-
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-top: 20px;
 }
 
-/* =========================
-   BOXES
-========================= */
-
+/* BOX */
 .box {
     border: 2px solid #00ff00;
     padding: 5px;
     border-radius: 20px;
-    transition: 0.3s;
-}
-
-.box:hover {
-    transform: scale(1.05);
 }
 
 .box img {
     width: 100%;
     border-radius: 20px;
 }
-
-/* =========================
-   HIDDEN CLASS
-========================= */
 
 .hidden {
     display: none;
