@@ -102,9 +102,15 @@ function goHome() {
 
 <br><br>
 
-<button onclick="showSection('activity')">Activity</button>
-<button onclick="showSection('quiz')">Quiz</button>
-<button onclick="showSection('exam')">Exam</button>
+<div style="position: absolute; top: 20px; left: 20px;">
+<button onclick="toggleMenu()">☰</button>
+<div id="menu" class="menu hidden">
+  <button onclick="showSection('activity'); toggleMenu()">Activity</button>
+  <button onclick="showSection('quiz'); toggleMenu()">Quiz</button>
+  <button onclick="showSection('exam'); toggleMenu()">Exam</button>
+  <button onclick="goHome(); toggleMenu()">Home</button>
+</div>
+</div>
 
 </div>
 
