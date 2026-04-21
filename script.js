@@ -1,7 +1,7 @@
 function showSection(sectionId) {
     document.getElementById("home").style.display = "none";
-    document.getElementById("activity").style.display = "none";
     document.getElementById("quiz").style.display = "none";
+    document.getElementById("laboratories").style.display = "none";
     document.getElementById("exam").style.display = "none";
 
     document.getElementById(sectionId).style.display = "block";
@@ -9,8 +9,8 @@ function showSection(sectionId) {
 
 function goHome() {
     document.getElementById("home").style.display = "block";
-    document.getElementById("activity").style.display = "none";
     document.getElementById("quiz").style.display = "none";
+    document.getElementById("laboratories").style.display = "none";
     document.getElementById("exam").style.display = "none";
 }
 
