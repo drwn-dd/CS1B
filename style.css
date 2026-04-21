@@ -7,14 +7,11 @@ body {
     align-items: center;
 }
 
-/* =========================
-   BURGER MENU (RIGHT SIDE)
-========================= */
-
+/* BURGER RIGHT SIDE */
 .burger-wrapper {
     position: fixed;
     top: 20px;
-    right: 20px;   /* CHANGED FROM LEFT TO RIGHT */
+    right: 20px;
     z-index: 9999;
 }
 
@@ -31,7 +28,6 @@ body {
     transition: 0.3s;
 }
 
-/* animation: ☰ → ✖ */
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -44,14 +40,11 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* =========================
-   MENU (RIGHT SIDE)
-========================= */
-
+/* MENU RIGHT SIDE */
 .menu {
     position: fixed;
     top: 60px;
-    right: 20px;   /* CHANGED FROM LEFT TO RIGHT */
+    right: 20px;
     background-color: #1f3b1f;
     border: 2px solid #00ff00;
     border-radius: 10px;
@@ -68,10 +61,7 @@ body {
     margin: 5px 0;
 }
 
-/* =========================
-   CONTAINERS
-========================= */
-
+/* CONTAINER */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -82,10 +72,7 @@ body {
     border-radius: 20px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
+/* BUTTONS */
 button {
     background-color: black;
     color: #00ff00;
@@ -101,20 +88,14 @@ button:hover {
     color: black;
 }
 
-/* =========================
-   GRID
-========================= */
-
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-/* =========================
-   BOXES
-========================= */
-
+/* BOX */
 .box {
     border: 2px solid #00ff00;
     padding: 5px;
@@ -125,10 +106,6 @@ button:hover {
     width: 100%;
     border-radius: 20px;
 }
-
-/* =========================
-   HIDDEN
-========================= */
 
 .hidden {
     display: none;
