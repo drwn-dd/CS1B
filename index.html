@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="updateDashboard()">
+<body>
 
 <marquee width="600">Anoo taraa??</marquee>
 
@@ -47,38 +47,21 @@
 
 </div>
 
-<!-- DASHBOARD -->
+<!-- DASHBOARD (FIXED HERE) -->
 <div class="container hidden" id="dashboard">
 <h2>Dashboard</h2>
 
 <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-
-    <div class="box">
-        <h3>Total Uploads</h3>
-        <p id="totalCount">0</p>
-    </div>
-
-    <div class="box">
-        <h3>Quiz Uploads</h3>
-        <p id="quizCount">0</p>
-    </div>
-
-    <div class="box">
-        <h3>Lab Uploads</h3>
-        <p id="labCount">0</p>
-    </div>
-
-    <div class="box">
-        <h3>Exam Uploads</h3>
-        <p id="examCount">0</p>
-    </div>
-
+    <div class="box"><h3>Total Uploads</h3><p id="totalCount">0</p></div>
+    <div class="box"><h3>Quiz Uploads</h3><p id="quizCount">0</p></div>
+    <div class="box"><h3>Lab Uploads</h3><p id="labCount">0</p></div>
+    <div class="box"><h3>Exam Uploads</h3><p id="examCount">0</p></div>
 </div>
 
 <button onclick="goHome()">Back</button>
 </div>
 
-<!-- LABORATORIES -->
+<!-- LAB -->
 <div class="container hidden" id="laboratories">
 <h2>My Laboratories</h2>
 
