@@ -6,7 +6,6 @@ function showSection(sectionId) {
     document.getElementById("exam").style.display = "none";
 
     document.getElementById(sectionId).style.display = "block";
-
     updateDashboard();
 }
 
@@ -28,7 +27,6 @@ function closeMenu() {
     document.querySelector(".burger").classList.remove("active");
 }
 
-/* DASHBOARD COUNTER FIX */
 function updateDashboard() {
     let quiz = document.querySelectorAll("#quiz .box").length;
     let lab = document.querySelectorAll("#laboratories .box").length;
