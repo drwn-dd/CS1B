@@ -6,26 +6,19 @@ body {
     padding-top: 80px;
 }
 
-/* TOPBAR */
 .topbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     height: 70px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 20px;
-
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
-
     border-bottom: 1px solid rgba(0,255,0,0.3);
-
     z-index: 2000;
 }
 
@@ -34,7 +27,6 @@ body {
     font-weight: 600;
 }
 
-/* BURGER (FIXED POSITION ONLY) */
 .burger {
     width: 40px;
     height: 30px;
@@ -48,35 +40,18 @@ body {
     height: 4px;
     background: #00ff00;
     border-radius: 3px;
-    transition: 0.3s;
 }
 
-.burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* MENU */
 .menu {
     position: fixed;
     top: 75px;
     right: 15px;
-
     background: #1f3b1f;
     border: 2px solid #00ff00;
-
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-
     border-radius: 10px;
     min-width: 160px;
     z-index: 3000;
@@ -85,16 +60,12 @@ body {
 .menu button {
     background: #223922;
     color: #00ff00;
-
     border: 1px solid rgba(0,255,0,0.5);
-
     padding: 10px;
     border-radius: 6px;
-
     text-align: left;
 }
 
-/* CONTAINER */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -106,7 +77,6 @@ body {
     text-align: center;
 }
 
-/* GRIDS (UNCHANGED LOGIC) */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -121,7 +91,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* BOXES (UNCHANGED FEEL) */
 .box {
     border: 2px solid #00ff00;
     padding: 10px;
@@ -134,7 +103,6 @@ body {
     display: block;
 }
 
-/* DASHBOARD */
 .dash-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -149,4 +117,18 @@ body {
 
 .hidden {
     display: none;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #223922;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
