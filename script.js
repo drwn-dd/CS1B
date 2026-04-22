@@ -1,24 +1,30 @@
 function showSection(sectionId) {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("laboratories").style.display = "none";
-    document.getElementById("exam").style.display = "none";
-    document.getElementById("dashboard").style.display = "none";
+    // hide all sections
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("quiz").classList.add("hidden");
+    document.getElementById("laboratories").classList.add("hidden");
+    document.getElementById("exam").classList.add("hidden");
 
-    document.getElementById(sectionId).style.display = "block";
+    // show selected section
+    document.getElementById(sectionId).classList.remove("hidden");
 
-    // ONLY update when opening dashboard
+    // update dashboard only when opened
     if (sectionId === "dashboard") {
         updateDashboard();
     }
 }
 
 function goHome() {
-    document.getElementById("home").style.display = "block";
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("laboratories").style.display = "none";
-    document.getElementById("exam").style.display = "none";
-    document.getElementById("dashboard").style.display = "none";
+    // hide all sections
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("quiz").classList.add("hidden");
+    document.getElementById("laboratories").classList.add("hidden");
+    document.getElementById("exam").classList.add("hidden");
+
+    // show home
+    document.getElementById("home").classList.remove("hidden");
 }
 
 function toggleMenu(el) {
