@@ -6,6 +6,8 @@ function showSection(sectionId) {
     document.getElementById("exam").style.display = "none";
 
     document.getElementById(sectionId).style.display = "block";
+
+    updateDashboard();
 }
 
 function goHome() {
@@ -24,4 +26,16 @@ function toggleMenu(el) {
 function closeMenu() {
     document.getElementById("menu").classList.add("hidden");
     document.querySelector(".burger").classList.remove("active");
+}
+
+/* DASHBOARD COUNTER FIX */
+function updateDashboard() {
+    let quiz = document.querySelectorAll("#quiz .box").length;
+    let lab = document.querySelectorAll("#laboratories .box").length;
+    let exam = document.querySelectorAll("#exam .box").length;
+
+    document.getElementById("quizCount").innerText = quiz;
+    document.getElementById("labCount").innerText = lab;
+    document.getElementById("examCount").innerText = exam;
+    document.getElementById("totalCount").innerText = quiz + lab + exam;
 }
