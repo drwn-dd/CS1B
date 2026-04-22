@@ -1,29 +1,22 @@
-function showSection(sectionId) {
-    // hide all sections
+function hideAll() {
     document.getElementById("home").classList.add("hidden");
     document.getElementById("dashboard").classList.add("hidden");
     document.getElementById("quiz").classList.add("hidden");
     document.getElementById("laboratories").classList.add("hidden");
     document.getElementById("exam").classList.add("hidden");
+}
 
-    // show selected section
-    document.getElementById(sectionId).classList.remove("hidden");
+function showSection(id) {
+    hideAll();
+    document.getElementById(id).classList.remove("hidden");
 
-    // update dashboard only when opened
-    if (sectionId === "dashboard") {
+    if (id === "dashboard") {
         updateDashboard();
     }
 }
 
 function goHome() {
-    // hide all sections
-    document.getElementById("home").classList.add("hidden");
-    document.getElementById("dashboard").classList.add("hidden");
-    document.getElementById("quiz").classList.add("hidden");
-    document.getElementById("laboratories").classList.add("hidden");
-    document.getElementById("exam").classList.add("hidden");
-
-    // show home
+    hideAll();
     document.getElementById("home").classList.remove("hidden");
 }
 
@@ -37,7 +30,6 @@ function closeMenu() {
     document.getElementById("menu").classList.add("hidden");
 }
 
-/* DASHBOARD COUNTER */
 function updateDashboard() {
     let quiz = document.querySelectorAll("#quiz .box img").length;
     let lab = document.querySelectorAll("#laboratories .box img").length;
