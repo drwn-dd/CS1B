@@ -33,4 +33,8 @@ function updateDashboard() {
     document.getElementById("totalCount").innerText = total;
 }
 
+function openImage(img) {
+    window.open(img.src, "_blank");
+}
+
 showSection("home");
