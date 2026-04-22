@@ -11,20 +11,16 @@
 
 <body>
 
-<!-- TOP BAR (BROWSER STYLE) -->
-<div class="topbar">
+<marquee width="600">Anoo taraa??</marquee>
 
-    <!-- BURGER (LEFT) -->
+<!-- BURGER -->
+<div class="burger-wrapper">
     <div class="burger" onclick="toggleMenu(this)">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-    <!-- TITLE (CENTER) -->
-    <div class="title">Darwin Dela Cruz | Portfolio</div>
-
-    <!-- MENU -->
     <div id="menu" class="menu hidden">
         <button onclick="goHome(); closeMenu()">Home</button>
         <button onclick="showSection('dashboard'); closeMenu()">Dashboard</button>
@@ -32,14 +28,10 @@
         <button onclick="showSection('laboratories'); closeMenu()">Laboratories</button>
         <button onclick="showSection('exam'); closeMenu()">Exam</button>
     </div>
-
 </div>
-
-<marquee width="600">Anoo taraa??</marquee>
 
 <!-- HOME -->
 <div class="container" id="home">
-
 <img src="https://uploads.onecompiler.io/44e2kbb6m/44e2kcvzs/IMG_1199.jpeg" width="200" style="border:2px solid #00ff00;border-radius: 20px;"><br><br>
 
 <b>Name:</b> Dela Cruz, Darwin D.
@@ -50,42 +42,36 @@
 <hr>
 <b>Control Number:</b> 251100887
 <hr>
-<b>About Me:</b>Hello! I'm Darwin Dela Cruz, 18 years old from Dasmariñas, Cavite. I like watching movies, listening to music, and spending time alone.
-
+<b>About Me:</b>Hello! I'm Darwin. I am 18 years old from Dasmariñas, Cavite. I like watching movies, listening to music, and spending time alone.
 </div>
 
 <!-- DASHBOARD -->
 <div class="container hidden" id="dashboard">
 <h2>Dashboard</h2>
-
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><h3>Total</h3><p id="totalCount">0</p></div>
 <div class="box"><h3>Quiz</h3><p id="quizCount">0</p></div>
 <div class="box"><h3>Lab</h3><p id="labCount">0</p></div>
 <div class="box"><h3>Exam</h3><p id="examCount">0</p></div>
 </div>
-
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- LAB -->
 <div class="container hidden" id="laboratories">
 <h2>My Laboratories</h2>
-
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
-
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- QUIZ -->
 <div class="container hidden" id="quiz">
 <h2>My Quizzes</h2>
-
 <div class="grid">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
@@ -94,19 +80,16 @@
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
-
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- EXAM -->
 <div class="container hidden" id="exam">
 <h2>My Exams</h2>
-
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
-
 <button onclick="goHome()">Back</button>
 </div>
 
