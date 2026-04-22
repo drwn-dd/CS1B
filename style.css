@@ -14,13 +14,7 @@ body {
     width: 100%;
     height: 55px;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* KEY FIX */
-
-    padding: 0 15px;
-
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
 
     border-bottom: 1px solid rgba(0,255,0,0.3);
@@ -32,19 +26,23 @@ body {
 .title {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #00ff00;
-    font-size: 14px;
     font-weight: 600;
 }
 
-/* BURGER RIGHT */
+/* BURGER FORCE RIGHT */
 .burger {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30px;
     cursor: pointer;
 }
 
-/* LINES */
+/* BURGER LINES */
 .burger span {
     display: block;
     height: 3px;
@@ -53,20 +51,18 @@ body {
     transition: 0.3s;
 }
 
-/* ANIMATION ☰ → ✖ */
+/* ANIMATION */
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
-
 .burger.active span:nth-child(2) {
     opacity: 0;
 }
-
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* MENU */
+/* MENU RIGHT */
 .menu {
     position: fixed;
     top: 60px;
