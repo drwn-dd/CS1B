@@ -13,7 +13,6 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 9999;
 }
 
 .burger {
@@ -32,11 +31,9 @@ body {
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
-
 .burger.active span:nth-child(2) {
     opacity: 0;
 }
-
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
@@ -53,7 +50,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 140px;
-    z-index: 999;
 }
 
 .menu button {
@@ -74,7 +70,7 @@ body {
     border-radius: 20px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 button {
     background-color: black;
     color: #00ff00;
@@ -85,16 +81,16 @@ button {
     border-radius: 20px;
 }
 
-button:hover {
-    background-color: #00ff00;
-    color: black;
-}
-
-/* GRID */
+/* GRID DEFAULT */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+}
+
+/* 🔥 FIX FOR LABORATORIES */
+.lab-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* BOX */
