@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 /* TOP BAR */
@@ -12,67 +12,70 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 55px;
+    height: 70px;
 
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
 
     border-bottom: 1px solid rgba(0,255,0,0.3);
 
     z-index: 2000;
 }
 
-/* TITLE CENTER */
+/* TITLE → NOW LEFT */
 .title {
     position: absolute;
-    left: 50%;
+    left: 20px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     color: #00ff00;
+    font-size: 16px;
     font-weight: 600;
 }
 
-/* BURGER FORCE RIGHT */
+/* BURGER RIGHT */
 .burger {
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
+    width: 40px;
     cursor: pointer;
 }
 
-/* BURGER LINES */
+/* LINES */
 .burger span {
     display: block;
-    height: 3px;
+    height: 4px;
     background: #00ff00;
-    margin: 5px 0;
+    margin: 7px 0;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
 /* ANIMATION */
 .burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 .burger.active span:nth-child(2) {
     opacity: 0;
 }
 .burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* MENU RIGHT */
+/* MENU */
 .menu {
     position: fixed;
-    top: 60px;
-    right: 10px;
-    background: rgba(31,59,31,0.9);
-    backdrop-filter: blur(8px);
+    top: 75px;
+    right: 15px;
+    background: rgba(31,59,31,0.95);
+    backdrop-filter: blur(10px);
     border: 2px solid #00ff00;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 /* CONTAINER */
