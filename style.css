@@ -6,7 +6,7 @@ body {
     padding-top: 80px;
 }
 
-/* TOP BAR FIXED */
+/* TOP BAR */
 .topbar {
     position: fixed;
     top: 0;
@@ -27,55 +27,76 @@ body {
     z-index: 2000;
 }
 
-/* LEFT TITLE */
+/* TITLE TEXT ON TOP BAR (Your portfolio name displayed on the left side of the header) */
 .title {
     color: #00ff00;
     font-size: 16px;
     font-weight: 600;
 }
 
-/* RIGHT BURGER */
 .burger {
     width: 40px;
     cursor: pointer;
 }
 
-/* BURGER LINES */
 .burger span {
     display: block;
     height: 4px;
     background: #00ff00;
     margin: 7px 0;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.3s;
 }
 
-/* ANIMATION */
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
 }
+
 .burger.active span:nth-child(2) {
     opacity: 0;
 }
+
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* MENU */
 .menu {
     position: fixed;
     top: 80px;
     right: 20px;
+
     background: rgba(31,59,31,0.95);
     backdrop-filter: blur(10px);
+
     border: 2px solid #00ff00;
     padding: 10px;
+
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    gap: 8px;
+
+    border-radius: 6px;
 }
 
-/* CONTAINER */
+.menu button {
+    background: #1a2f1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+
+    padding: 8px;
+    font-size: 13px;
+
+    border-radius: 4px;
+    margin: 0;
+
+    transition: 0.2s;
+}
+
+.menu button:hover {
+    background: #00ff00;
+    color: black;
+}
+
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -87,14 +108,12 @@ body {
     text-align: center;
 }
 
-/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-/* BOX */
 .box {
     border: 2px solid #00ff00;
     padding: 10px;
@@ -106,16 +125,20 @@ body {
     border-radius: 20px;
 }
 
-/* BUTTON */
 button {
-    background: black;
+    background: #1a2f1a;
     color: #00ff00;
     border: 2px solid #00ff00;
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
-/* HIDDEN */
+button:hover {
+    background: #00ff00;
+    color: black;
+}
+
 .hidden {
     display: none;
 }
