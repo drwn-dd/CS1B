@@ -2,25 +2,26 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Profile</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<marquee width="600">Anoo taraa??</marquee>
+<!-- TOP BAR -->
+<div class="topbar">
 
-<!-- BURGER -->
-<div class="burger-wrapper">
+    <div class="title">Darwin Dela Cruz | Portfolio</div>
+
+    <!-- BURGER RIGHT -->
     <div class="burger" onclick="toggleMenu(this)">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
+    <!-- MENU -->
     <div id="menu" class="menu hidden">
         <button onclick="goHome(); closeMenu()">Home</button>
         <button onclick="showSection('dashboard'); closeMenu()">Dashboard</button>
@@ -28,7 +29,10 @@
         <button onclick="showSection('laboratories'); closeMenu()">Laboratories</button>
         <button onclick="showSection('exam'); closeMenu()">Exam</button>
     </div>
+
 </div>
+
+<marquee width="600">Anoo taraa??</marquee>
 
 <!-- HOME -->
 <div class="container" id="home">
@@ -48,30 +52,35 @@
 <!-- DASHBOARD -->
 <div class="container hidden" id="dashboard">
 <h2>Dashboard</h2>
+
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><h3>Total</h3><p id="totalCount">0</p></div>
 <div class="box"><h3>Quiz</h3><p id="quizCount">0</p></div>
 <div class="box"><h3>Lab</h3><p id="labCount">0</p></div>
 <div class="box"><h3>Exam</h3><p id="examCount">0</p></div>
 </div>
+
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- LAB -->
 <div class="container hidden" id="laboratories">
 <h2>My Laboratories</h2>
+
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
+
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- QUIZ -->
 <div class="container hidden" id="quiz">
 <h2>My Quizzes</h2>
+
 <div class="grid">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
@@ -80,16 +89,19 @@
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
+
 <button onclick="goHome()">Back</button>
 </div>
 
 <!-- EXAM -->
 <div class="container hidden" id="exam">
 <h2>My Exams</h2>
+
 <div class="grid" style="grid-template-columns: repeat(2,1fr);">
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 <div class="box"><img src="https://uploads.onecompiler.io/44e2kbb6m/44e2vz54d/IMG_0905.jpeg"></div>
 </div>
+
 <button onclick="goHome()">Back</button>
 </div>
 
