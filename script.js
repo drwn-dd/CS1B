@@ -1,12 +1,13 @@
 function showSection(sectionId) {
     document.getElementById("home").style.display = "none";
-    document.getElementById("dashboard").style.display = "none";
     document.getElementById("quiz").style.display = "none";
     document.getElementById("laboratories").style.display = "none";
     document.getElementById("exam").style.display = "none";
+    document.getElementById("dashboard").style.display = "none";
 
     document.getElementById(sectionId).style.display = "block";
 
+    // ONLY update when opening dashboard
     if (sectionId === "dashboard") {
         updateDashboard();
     }
@@ -14,10 +15,10 @@ function showSection(sectionId) {
 
 function goHome() {
     document.getElementById("home").style.display = "block";
-    document.getElementById("dashboard").style.display = "none";
     document.getElementById("quiz").style.display = "none";
     document.getElementById("laboratories").style.display = "none";
     document.getElementById("exam").style.display = "none";
+    document.getElementById("dashboard").style.display = "none";
 }
 
 function toggleMenu(el) {
