@@ -1,7 +1,13 @@
 function showSection(id) {
     document.querySelectorAll(".container").forEach(c => c.classList.add("hidden"));
     document.getElementById(id).classList.remove("hidden");
+
     updateDashboard();
+
+    const back = document.getElementById("backWrapper");
+    if (back) {
+        back.classList.toggle("hidden", id === "home");
+    }
 }
 
 function toggleMenu(el) {
