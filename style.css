@@ -32,7 +32,6 @@ body {
     font-weight: 600;
 }
 
-/* BURGER */
 .burger {
     width: 40px;
     height: 30px;
@@ -49,7 +48,6 @@ body {
     transition: 0.3s;
 }
 
-/* ANIMATION RESTORED */
 .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -62,7 +60,6 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* MENU */
 .menu {
     position: fixed;
     top: 75px;
@@ -85,12 +82,9 @@ body {
 .menu button {
     background: #223922;
     color: #00ff00;
-
     border: 1px solid rgba(0,255,0,0.5);
-
     padding: 10px;
     border-radius: 6px;
-
     text-align: left;
 }
 
@@ -144,17 +138,14 @@ body {
 }
 
 .back-btn {
-    display: block;
-    margin: 20px auto;
     padding: 10px 18px;
-
     background: #223922;
     color: #00ff00;
-
     border: 2px solid #00ff00;
     border-radius: 12px;
-
     cursor: pointer;
+    margin: 20px auto;
+    display: block;
 }
 
 .hidden {
