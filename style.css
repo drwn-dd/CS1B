@@ -102,31 +102,53 @@ body {
     text-align: center;
 }
 
+/* =========================
+   FIXED GRID SYSTEM
+========================= */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.exam-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
+/* LAB (2x2 CLEAN) */
 .lab-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.box img {
-    width: 100%;
-    border-radius: 15px;
+/* EXAM (2 BOXES CLEAN) */
+.exam-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
+
+/* =========================
+   FIXED BOX (THIS WAS THE ISSUE)
+========================= */
 
 .box {
     border: 2px solid #00ff00;
-    padding: 10px;
     border-radius: 15px;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 1 / 1; /* makes all boxes equal */
+    overflow: hidden;
 }
 
+/* IMAGE FIX */
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* prevents stretching */
+    border-radius: 10px;
+}
+
+/* DASHBOARD */
 .dash-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
