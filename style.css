@@ -6,6 +6,7 @@ body {
     padding-top: 80px;
 }
 
+/* TOP BAR */
 .topbar {
     position: fixed;
     top: 0;
@@ -33,6 +34,7 @@ body {
     font-weight: 600;
 }
 
+/* BURGER */
 .burger {
     width: 42px;
     height: 30px;
@@ -61,6 +63,7 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* MENU */
 .menu {
     position: fixed;
     top: 75px;
@@ -76,6 +79,7 @@ body {
 
     border-radius: 10px;
     min-width: 170px;
+
     z-index: 3000;
 }
 
@@ -91,6 +95,7 @@ body {
     text-align: left;
 }
 
+/* CONTAINER (UNCHANGED SIZE FEEL) */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -102,50 +107,35 @@ body {
     text-align: center;
 }
 
-/* =========================
-   FIXED GRID SYSTEM
-========================= */
-
+/* GRID (BACK TO NORMAL) */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-/* LAB (2x2 CLEAN) */
 .lab-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* EXAM (2 BOXES CLEAN) */
 .exam-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* =========================
-   FIXED BOX (THIS WAS THE ISSUE)
-========================= */
-
+/* BOX (BACK TO YOUR ORIGINAL FEEL) */
 .box {
     border: 2px solid #00ff00;
+    padding: 8px;
     border-radius: 15px;
 
-    padding: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    aspect-ratio: 1 / 1; /* makes all boxes equal */
-    overflow: hidden;
+    height: auto;   /* IMPORTANT: removes forced size */
 }
 
-/* IMAGE FIX */
+/* IMAGE FIX ONLY */
 .box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* prevents stretching */
     border-radius: 10px;
+    display: block;
 }
 
 /* DASHBOARD */
