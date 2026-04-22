@@ -18,7 +18,7 @@ body {
 
     padding: 0 20px;
 
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(12px);
 
     border-bottom: 1px solid rgba(0,255,0,0.3);
@@ -28,7 +28,6 @@ body {
 
 .title {
     color: #00ff00;
-    font-size: 16px;
     font-weight: 600;
 }
 
@@ -41,7 +40,7 @@ body {
     display: block;
     height: 4px;
     background: #00ff00;
-    margin: 7px 0;
+    margin: 6px 0;
     border-radius: 3px;
     transition: 0.3s;
 }
@@ -58,17 +57,12 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* =======================
-   FIXED BURGER MENU STYLE
-======================= */
 .menu {
     position: fixed;
-    top: 80px;
+    top: 75px;
     right: 20px;
 
-    background: rgba(25, 45, 25, 0.95);
-    backdrop-filter: blur(10px);
-
+    background: #1f3b1f;
     border: 2px solid #00ff00;
 
     padding: 12px;
@@ -78,38 +72,29 @@ body {
 
     border-radius: 10px;
 
-    min-width: 160px;
+    min-width: 170px;
 }
 
-/* BUTTONS INSIDE BURGER */
 .menu button {
     background: #223922;
     color: #00ff00;
 
-    border: 1px solid rgba(0,255,0,0.6);
+    border: 1px solid rgba(0,255,0,0.5);
 
-    padding: 10px 12px;
-
-    font-size: 13px;
-    font-weight: 500;
+    padding: 10px;
 
     border-radius: 6px;
 
-    margin: 0;
-
     text-align: left;
 
-    transition: 0.2s ease;
+    transition: 0.2s;
 }
 
-/* HOVER EFFECT */
 .menu button:hover {
     background: #00ff00;
     color: black;
-    transform: translateX(3px);
 }
 
-/* MAIN CONTAINER */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -127,15 +112,26 @@ body {
     gap: 15px;
 }
 
-.box {
-    border: 2px solid #00ff00;
-    padding: 10px;
-    border-radius: 20px;
+.exam-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.box img {
-    width: 100%;
-    border-radius: 20px;
+.box {
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.dash-box {
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 button {
@@ -145,11 +141,6 @@ button {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #00ff00;
-    color: black;
 }
 
 .hidden {
