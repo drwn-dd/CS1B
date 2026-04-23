@@ -21,6 +21,7 @@
 
 <div id="menu" class="menu hidden">
     <button onclick="showSection('home'); closeMenu()">Home</button>
+    <button onclick="showSection('opponent'); closeMenu()">Opponent</button>
     <button onclick="showSection('dashboard'); closeMenu()">Dashboard</button>
     <button onclick="showSection('quiz'); closeMenu()">Quiz</button>
     <button onclick="showSection('laboratories'); closeMenu()">Laboratories</button>
@@ -29,7 +30,7 @@
 
 <marquee width="600">Anoo taraa??</marquee>
 
-<!-- ABOUT ME (UNCHANGED) -->
+<!-- HOME -->
 <div class="container" id="home">
 
 <img src="https://uploads.onecompiler.io/44e2kbb6m/44e2kcvzs/IMG_1199.jpeg" width="200" style="border:2px solid #00ff00;border-radius:20px;">
@@ -47,9 +48,8 @@
 
 </div>
 
-<!-- NEW SEPARATE BOX -->
-<div class="container">
-
+<!-- NOW SEPARATE SECTION -->
+<div class="container hidden" id="opponent">
 <h2>Pick your opponent</h2>
 
 <div class="opponent-grid">
@@ -58,7 +58,6 @@
     <div class="opponent-box"></div>
     <div class="opponent-box"></div>
 </div>
-
 </div>
 
 <!-- DASHBOARD -->
