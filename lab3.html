@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 * {
     margin: 0;
@@ -23,7 +25,6 @@ body {
     min-height: 100vh;
 }
 
-/* CARD */
 .card {
     width: 600px;
     max-width: 95%;
@@ -33,21 +34,18 @@ body {
     padding: 20px;
 }
 
-/* TITLE */
 h1 {
     text-align: center;
     color: #00ff00;
     margin-bottom: 20px;
 }
 
-/* LABELS */
 label {
     margin-top: 10px;
     display: block;
     color: #00ff00;
 }
 
-/* INPUTS */
 input, select {
     width: 100%;
     padding: 8px;
@@ -60,7 +58,6 @@ input, select {
     border-radius: 8px;
 }
 
-/* RADIO */
 .radio-group {
     margin-top: 8px;
     color: white;
@@ -71,7 +68,7 @@ input, select {
     margin-right: 5px;
 }
 
-/* CHECKBOX */
+/* FIXED CHECKBOX ALIGNMENT */
 .checkbox-group {
     margin-top: 10px;
 }
@@ -79,11 +76,16 @@ input, select {
 .checkbox-label {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 8px;
     color: white;
 }
 
-/* BUTTONS */
+.checkbox-label input {
+    width: auto;
+    margin: 0;
+}
+
 button {
     padding: 10px;
     border-radius: 10px;
@@ -108,7 +110,6 @@ button {
     color: #00ff00;
 }
 
-/* BUTTON ROW */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -116,7 +117,6 @@ button {
     margin-top: 15px;
 }
 
-/* BACK BUTTON */
 .back-btn {
     display: inline-block;
     margin-top: 15px;
@@ -180,7 +180,7 @@ Show / Hide Password
 <div class="checkbox-group">
     <label class="checkbox-label">
         <input type="checkbox" id="agree">
-        I agree to Terms & Privacy
+        <span>I agree to Terms & Privacy</span>
     </label>
 </div>
 
