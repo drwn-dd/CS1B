@@ -5,20 +5,8 @@ body {
     margin: 0;
     padding-top: 80px;
 }
-/* PICK OPPONENT GRID */
-.opponent-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 15px;
-}
 
-/* SQUARE BOX */
-.opponent-box {
-    border: 2px solid #00ff00;
-    border-radius: 15px;
-    aspect-ratio: 1 / 1;
-}
+/* TOPBAR */
 .topbar {
     position: fixed;
     top: 0;
@@ -40,6 +28,7 @@ body {
     font-weight: 600;
 }
 
+/* BURGER */
 .burger {
     width: 40px;
     height: 30px;
@@ -68,6 +57,7 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* MENU */
 .menu {
     position: fixed;
     top: 75px;
@@ -92,6 +82,7 @@ body {
     text-align: left;
 }
 
+/* CONTAINER */
 .container {
     background-color: #1f3b1f;
     width: 600px;
@@ -103,6 +94,7 @@ body {
     text-align: center;
 }
 
+/* GRIDS */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -117,6 +109,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* BOX */
 .box {
     border: 2px solid #00ff00;
     padding: 10px;
@@ -129,6 +122,7 @@ body {
     display: block;
 }
 
+/* LAB BUTTON */
 .open-btn {
     margin-top: 10px;
     padding: 8px;
@@ -140,6 +134,7 @@ body {
     cursor: pointer;
 }
 
+/* DASHBOARD */
 .dash-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,6 +147,7 @@ body {
     border-radius: 15px;
 }
 
+/* BACK BUTTON */
 .back-btn {
     padding: 10px 18px;
     background: #223922;
@@ -163,6 +159,28 @@ body {
     display: block;
 }
 
+/* PICK OPPONENT */
+.opponent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.opponent-box {
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opponent-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* UTIL */
 .hidden {
     display: none;
 }
