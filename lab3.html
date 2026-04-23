@@ -6,135 +6,129 @@
 <title>Registration Form</title>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #2e2e2e;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-
-    background-color: #F3E9DC;
-    background-image: url("caroimages/leopard.jfif");
-    background-size: cover;
-    background-position: center;
 }
 
+/* CARD */
 .card {
-    width: 90%;
-    max-width: 32rem;
-    background-color: #F3E9DC;
-    border: 0.12rem solid #110702;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 0 1rem rgba(17, 7, 2, 0.3);
+    width: 600px;
+    max-width: 95%;
+    background-color: #1f3b1f;
+    border: 2px solid #00ff00;
+    border-radius: 20px;
+    padding: 20px;
 }
 
+/* TITLE */
 h1 {
     text-align: center;
-    color: #110702;
+    color: #00ff00;
+    margin-bottom: 20px;
 }
 
+/* LABELS */
 label {
-    margin-top: 0.8rem;
-    color: #110702;
+    margin-top: 10px;
+    display: block;
+    color: #00ff00;
 }
 
+/* INPUTS */
 input, select {
     width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    border-radius: 0.5rem;
-    border: 0.08rem solid #110702;
-    background-color: #F3E9DC;
-    color: #110702;
-    font-family: inherit;
+    padding: 8px;
+    margin-top: 5px;
+
+    background: #2e2e2e;
+    color: white;
+
+    border: 1px solid #00ff00;
+    border-radius: 8px;
 }
 
-input::placeholder {
-    color: #8a7f76;
-}
-
+/* RADIO */
 .radio-group {
-    margin-top: 0.5rem;
+    margin-top: 8px;
+    color: white;
 }
 
 .radio-group input {
     width: auto;
-    margin-right: 0.3rem;
+    margin-right: 5px;
 }
 
+/* CHECKBOX */
 .checkbox-group {
-    margin-top: 0.5rem;
+    margin-top: 10px;
 }
 
 .checkbox-label {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    color: #110702;
+    gap: 8px;
+    color: white;
 }
 
-.checkbox-label input {
-    width: auto;
-    margin: 0;
-}
-
+/* BUTTONS */
 button {
-    padding: 0.4rem;
-    border-radius: 0.5rem;
-    border: 0.10rem solid #110702;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
     cursor: pointer;
-    font-family: inherit;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
 }
 
 .primary-btn {
-    background-color: #110702;
-    color: #F3E9DC;
+    background-color: #00ff00;
+    color: black;
 }
 
 .secondary-btn {
-    background-color: transparent;
-    color: #110702;
+    background: transparent;
+    color: #00ff00;
 }
 
 .small-btn {
-    width: 50%;
-    margin-top: 0.5rem;
-    background-color: #110702;
-    color: #F3E9DC;
+    margin-top: 10px;
+    width: 100%;
+    background: #223922;
+    color: #00ff00;
 }
 
- .back-container {
+/* BUTTON ROW */
+.buttons {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
- }
-
-.back-btn {
-    align-items: center ;
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 8px;
-    border: 2px solid #110702;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #110702;
-    font-weight: bold;
-    transition: 0.3s;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.back-btn:hover {
-    background-color: #110702;
-    color: #F3E9DC;
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #00ff00;
+    text-align: center;
+    width: 100%;
 }
 </style>
 </head>
@@ -158,10 +152,10 @@ button {
 <input type="password" id="confirm" placeholder="Confirm Password">
 
 <button type="button" class="small-btn" onclick="togglePassword()">
-Show / Hide Password<br>
+Show / Hide Password
 </button>
 
-<label><br>Age</label><br>
+<label>Age</label>
 <input type="number" id="age" placeholder="Enter Age">
 
 <label>Gender</label>
@@ -173,14 +167,14 @@ Show / Hide Password<br>
 
 <label>Country</label>
 <select id="country">
-          <option value="">-- select a country --</option>
-          <option value="USA">United States</option>
-          <option value="Canada">Canada</option>
-          <option value="UK">United kingdom</option>
-          <option value="Australia">Australia</option>
-          <option value="India">India</option>
-          <option value="Philippines">Philippines</option>
-          <option value="Other">Other</option>
+    <option value="">-- select a country --</option>
+    <option value="USA">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="UK">United Kingdom</option>
+    <option value="Australia">Australia</option>
+    <option value="India">India</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Other">Other</option>
 </select>
 
 <div class="checkbox-group">
@@ -193,14 +187,13 @@ Show / Hide Password<br>
 <div class="buttons">
     <button type="button" class="secondary-btn" onclick="clearForm()">Clear</button>
     <button type="button" class="primary-btn" onclick="RegistrationSummary()">Register</button>
-    <a href="activities.html" class="back-btn">⬅ Back to Activities</a>
-    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a> 
 </div>
+
+<a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
 
 </div>
 
 <script>
-
 function togglePassword() {
     let pass = document.getElementById("password");
     let confirm = document.getElementById("confirm");
@@ -234,8 +227,7 @@ function RegistrationSummary() {
     }
 
     alert(
-        "REGISTRATION SUMMARY\n" +
-        "\n" +
+        "REGISTRATION SUMMARY\n\n" +
         "Full Name: " + name + "\n" +
         "Email: " + email + "\n" +
         "Age: " + age + "\n" +
@@ -254,7 +246,6 @@ function clearForm() {
     });
     document.getElementById("country").value = "";
 }
-
 </script>
 
 </body>
